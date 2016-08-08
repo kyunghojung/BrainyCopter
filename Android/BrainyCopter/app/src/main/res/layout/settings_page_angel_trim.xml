@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/RelativeLayout_trim"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/dummyImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/trim_dummy_center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+    <Button
+        android:id="@+id/upTrimBtn"
+        android:background="@drawable/btn_trim_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30.0dip"
+        android:layout_above="@id/dummyImageView"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/downTrimBtn"
+        android:background="@drawable/btn_trim_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip"
+        android:layout_below="@id/dummyImageView"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/rightTrimBtn"
+        android:background="@drawable/btn_trim_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.0dip"
+        android:layout_toRightOf="@id/upTrimBtn"
+        android:layout_centerVertical="true" />
+    <Button
+        android:id="@+id/leftTrimBtn"
+        android:background="@drawable/btn_trim_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30.0dip"
+        android:layout_toLeftOf="@id/upTrimBtn"
+        android:layout_centerVertical="true" />
+</RelativeLayout>
